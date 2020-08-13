@@ -1,4 +1,4 @@
-,REF_DATE,GEO,AGE_GROUP,Sex,LIFE_DOMAIN,VALUE
+,ref_date,geo,age_group,sex,life_domain,value
 0,2016,Canada,"Total, 15 years and over",Both sexes,Life as a whole,7.9
 1,2016,Canada,"Total, 15 years and over",Both sexes,Standard of living,7.7
 2,2016,Canada,"Total, 15 years and over",Both sexes,Health,7.4
