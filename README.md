@@ -1,9 +1,14 @@
-# happiness_squad_ETL
+# Happiness Squad does ETL
 <img src="/Images/ciwbanner1000x400.png" width="1080">
-ETL project<br> 
+
+## Team members: 
+- Eben Haezer 
+- Momotaz Mahin Khan
+- Sheri Shojaie
+- Vivi Santosa 
 
 ## Project description / online:
-The goal of this project is to extract data related to our project 1 “The Pursuit of Happiness” from various disparate sources. Unlike the global scope of our first project, the focus of this ETL exercise will be on Canadian data. Once acquired, source information will undergo transformation to obtain data that is clean, disambiguous, and ready-to-consume. Transformed datasets will be loaded into afinal production database. 
+The goal of this ETL project is to extract data related to our project 1 “The Pursuit of Happiness” from various disparate sources. Unlike the global scope of our first project, the focus of this ETL exercise will be on Canadian data. Once acquired, source information will undergo transformation to obtain data that is clean, disambiguous, and ready-to-consume. Transformed datasets will be loaded into afinal production database. 
 <br>
 ## Data sources:
 - API: StatCan Life Satisfactionhttps://www.statcan.gc.ca/eng/developers/wds/user-guide
