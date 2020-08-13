@@ -18,8 +18,8 @@ The goal of this ETL project is to extract data related to our project 1 “The 
 <br> <br>
 ## Final production database: <br>
 Relational database, postgreSQLPostgreSQL was selected as our production database for the following reasons:  <br>
-(1) SQL prioritises data integrity and outlining the relationships between the different variables obtained. As this is a continuation of our previous project, we have familiarity with the different data sources and the transformation steps thatwill be taken in order to prepare the data for loading into defined table schemata
-(2) Data sources are static and we do not expect the format of the data to change over time
+(1) SQL prioritises data integrity and outlining the relationships between the different variables obtained. As this is a continuation of our previous project, we have familiarity with the different data sources and the transformation steps thatwill be taken in order to prepare the data for loading into defined table schemata<br>
+(2) Data sources are static and we do not expect the format of the data to change over time<br>
 (3) SQL will allow us to map the data relationships between the different sources to obtain optimal table schemata for future data refreshes, analysis and consumption <br>
  
 ## Draft of tasks<br> 
@@ -30,25 +30,25 @@ Relational database, postgreSQLPostgreSQL was selected as our production databas
 
 #### Web scrape [Vivi, Momotaz]<br> 
 - Navigate to pages with desired tables, this includes for example on the UWaterloo Wellbeing Index web page: 
-  (1) Healthy Populations, 
-  (2)Leisure & Culture, and 
-  (3) Living Standards. 
+  (1) Healthy Populations, <br>
+  (2)Leisure & Culture, and <br>
+  (3) Living Standards. <br>
 - Scrape all information for all years of data provided: 1994-2014Scrape information from select tables (via Python, Beautifulsoup library) and continue into transformation steps <br> 
 
 #### Transform data [Sheri, Vivi] <br> 
 Using Pandas library make all necessary transformations, including :
-- Change format to dataframe Collect desired columns, and rename into desired table schemata (in line with table in our database); set index 
-- Remove duplicates and NAN values as necessary 
+- Change format to dataframe Collect desired columns, and rename into desired table schemata (in line with table in our database); set index <br>
+- Remove duplicates and NAN values as necessary <br>
 - Clean up values in select columns where needed (eg removing spaces, or additional unwanted characters)<br> 
 
 #### Load data <br> 
 - PostgreSQL<br>
-       -  Create entity relationship diagram to organize table logic and relationships [Eben, Sheri]
-       -  In PostgreSQL create table schemata for all required tables. 
-       -  Set necessary primary and foreign keys [Momotaz] 
+       -  Create entity relationship diagram to organize table logic and relationships [Eben, Sheri]<br>
+       -  In PostgreSQL create table schemata for all required tables. <br>
+       -  Set necessary primary and foreign keys [Momotaz] <br>
 - Python [Momotaz / with support from group]<br>
-       -  Create database connection (connection string and engine) 
-       -  Confirm tables in database 
-       -  Load data into database via specified table names
+--  Create database connection (connection string and engine)
+--  Confirm tables in database 
+--  Load data into database via specified table names
 
 
