@@ -120,8 +120,11 @@ year VARCHAR
 );
 
 CREATE TABLE life_domain (
+index INT PRIMARY KEY,
 age_group VARCHAR,
 sex VARCHAR,
 life_domain VARCHAR,
 value INT
 );
+
+
