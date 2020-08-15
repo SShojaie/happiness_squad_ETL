@@ -66,6 +66,7 @@ The image below shows the expected result.
 <img src="/03 Images/Screenshot (156).png" width="720"> <br>
 
 We also create a small flask file to take the file from PostgresSQL and load it to an HTML file. Below is the screenshoot of the HTML display.
+
 <img src="/03 Images/Screenshot (158).png" width="720"> <br>
 
 
