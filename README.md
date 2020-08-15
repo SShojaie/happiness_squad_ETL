@@ -42,7 +42,7 @@ The goal of this ETL project is to extract data related to our project 1 “The 
 5. This function was used to scrape the table data from each of the feature table web pages and used pandas to read the tables. See the transformation steps taken in the below section.<br>
 
 ## Transform <br>
-<img src="/03 Images/Screenshot (156).png" width="720"> <br>
+
 ### StatCan Life Satisfaction (API) transformation steps included: <br>
   - Select only columns of interest <br>
   - Drop na values <br>
@@ -59,7 +59,10 @@ The goal of this ETL project is to extract data related to our project 1 “The 
   - Unwanted fields were dropped <br>
   - Column names were updated. Especially in the eight feature tables, very long column names were updated to short and intuitive column names to match table schemata in database<br>
 
-
+## Result <br>
+<img src="/03 Images/Screenshot (156).png" width="720"> <br>
+After all the transformation, we upload all the data to PosGrad SQL.
+The above image shown the queries that we perform to check the data.
 
 
 
