@@ -1,5 +1,23 @@
 -- Creating tables
 
+-- API query from Global News
+CREATE TABLE happiness_news (
+index INT PRIMARY KEY,
+news_title VARCHAR,
+news_excerpt VARCHAR,
+news_date VARCHAR
+);
+
+--API query from StatCan
+CREATE TABLE life_domain (
+index INT PRIMARY KEY,
+age_group VARCHAR,
+sex VARCHAR,
+life_domain VARCHAR,
+value INT
+);
+
+--Web Scrape from UofWaterloo CIW Index
 CREATE TABLE ciw_summary (
 index INT PRIMARY KEY,
 ciw NUMERIC,
@@ -120,18 +138,6 @@ leisure_culture_expenditure NUMERIC
 );
 
 
-CREATE TABLE happiness_news (
-title VARCHAR,
-content VARCHAR,
-year VARCHAR
-);
 
-CREATE TABLE life_domain (
-index INT PRIMARY KEY,
-age_group VARCHAR,
-sex VARCHAR,
-life_domain VARCHAR,
-value INT
-);
 
 
