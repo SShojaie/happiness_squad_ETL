@@ -1,6 +1,6 @@
 # Happiness Squad does ETL
 #### An UoT Data Analytic Bootcamp ETL project
-<img src="/03 Images/HappinessBanner.png" width="1080">
+<img src="/03 Images/ciwbanner1000x400.png" width="1080">
 
 ## Team members: 
 - Eben Haezer 
