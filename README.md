@@ -62,5 +62,6 @@ The goal of this ETL project is to extract data related to our project 1 “The 
 ## Result <br>
 After the extract and transformation phase, we load the data to PostgreSQL.
 The image below shows the expected result.
+
 <img src="/03 Images/Screenshot (156).png" width="720"> <br>
 
