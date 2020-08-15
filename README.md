@@ -21,7 +21,7 @@ The goal of this ETL project is to extract data related to our project 1 “The 
 - Web scraping: UWaterloo Canadian Index of Wellbeing<br>
   https://uwaterloo.ca/canadian-index-wellbeing/reports/2016-canadian-index-wellbeing-national-report/trends-and-statistical-highlights<br>
   
-<img src="/03 Images/etl_project.PNG" width="540"> 
+<img src="/03 Images/etl_project.PNG" width="540"> <br>
 ## Extract: <br>
 ### StatCan Life Satisfaction – API
 1. The first step is to look for the desired data on the StatCan site. We pasted the URL  'https://www150.statcan.gc.ca/t1/wds/rest/getAllCubesListLite' to chrome and did a search function.<br>
@@ -41,17 +41,17 @@ The goal of this ETL project is to extract data related to our project 1 “The 
 4. Data from eight additional “feature tables” were also scraped. Feature tables were stored in a similar format on the UWaterloo webpage, therefore to streamline scrape (and some of the data transformation steps), a function was created called “table_maker_function”. <br>
 5. This function was used to scrape the table data from each of the feature table web pages and used pandas to read the tables. See the transformation steps taken in the below section.<br>
 
-## Transform
-<img src="/03 Images/Screenshot (156).png" width="720"> 
-#### StatCan Life Satisfaction (API) transformation steps included: <br>
+## Transform <br>
+<img src="/03 Images/Screenshot (156).png" width="720"> <br>
+### StatCan Life Satisfaction (API) transformation steps included: <br>
   - Select only columns of interest <br>
   - Drop na values <br>
   - Rename columns to match desired schemata in database<br>
   - Default index column used for index and primary key<br>
-#### Global News (web scrape) transformation steps included:<br>
+### Global News (web scrape) transformation steps included:<br>
   - Only desired fields were scraped during the extraction step. Otherwise data was clean and placed into a dataframe prior to loading into database <br>
   - Default index column used for index and primary key<br>
-#### UWaterloo Canadian Wellbeing Index (web scrape) transformation steps included: <br>
+### UWaterloo Canadian Wellbeing Index (web scrape) transformation steps included: <br>
   - String data was split to retrieve desired data from table for certain fields exracted <br>
   - Data type was updated to integer or float <br>
   - Index was set to year (common to all tables from this data source)<br>
