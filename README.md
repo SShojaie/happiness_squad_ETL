@@ -43,21 +43,21 @@ The goal of this ETL project is to extract data related to our project 1 “The 
 
 ## Transform
 <img src="/03 Images/Screenshot (156).png" width="720"> 
-- StatCan Life Satisfaction (API) transformation steps included: 
-  - Select only columns of interest 
-  - Drop na values 
-  - Rename columns to match desired schemata in database
-  - Default index column used for index and primary key
-- Global News (web scrape) transformation steps included:
-  - Only desired fields were scraped during the extraction step. Otherwise data was clean and placed into a dataframe prior to loading into database 
-  - Default index column used for index and primary key
-- UWaterloo Canadian Wellbeing Index (web scrape) transformation steps included: 
-  - String data was split to retrieve desired data from table for certain fields exracted 
-  - Data type was updated to integer or float 
-  - Index was set to year (common to all tables from this data source)
-  - The two main tables were joined on ‘year’
-  - Unwanted fields were dropped 
-  - Column names were updated. Especially in the eight feature tables, very long column names were updated to short and intuitive column names to match table schemata in database
+#### StatCan Life Satisfaction (API) transformation steps included: <br>
+  - Select only columns of interest <br>
+  - Drop na values <br>
+  - Rename columns to match desired schemata in database<br>
+  - Default index column used for index and primary key<br>
+#### Global News (web scrape) transformation steps included:<br>
+  - Only desired fields were scraped during the extraction step. Otherwise data was clean and placed into a dataframe prior to loading into database <br>
+  - Default index column used for index and primary key<br>
+#### UWaterloo Canadian Wellbeing Index (web scrape) transformation steps included: <br>
+  - String data was split to retrieve desired data from table for certain fields exracted <br>
+  - Data type was updated to integer or float <br>
+  - Index was set to year (common to all tables from this data source)<br>
+  - The two main tables were joined on ‘year’<br>
+  - Unwanted fields were dropped <br>
+  - Column names were updated. Especially in the eight feature tables, very long column names were updated to short and intuitive column names to match table schemata in database<br>
 
 
 
