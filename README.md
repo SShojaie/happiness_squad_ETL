@@ -1,6 +1,6 @@
 # Happiness Squad does ETL
 #### A UoT Data Analytic Bootcamp ETL project
-<img src="/Images/ciwbanner1000x400.png" width="1080">
+<img src="/03 Images/ciwbanner1000x400.png" width="1080">
 
 ## Team members: 
 - Eben Haezer 
@@ -21,7 +21,7 @@ The goal of this ETL project is to extract data related to our project 1 “The 
 - Web scraping: UWaterloo Canadian Index of Wellbeing<br>
   https://uwaterloo.ca/canadian-index-wellbeing/reports/2016-canadian-index-wellbeing-national-report/trends-and-statistical-highlights<br>
   
-<img src="/Images/etl_project.PNG" width="540"> 
+<img src="/03 Images/etl_project.PNG" width="540"> 
 ## Extract: <br>
 ### StatCan Life Satisfaction – API
 1. The first step is to look for the desired data on the StatCan site. We pasted the URL  'https://www150.statcan.gc.ca/t1/wds/rest/getAllCubesListLite' to chrome and did a search function.<br>
@@ -42,7 +42,7 @@ The goal of this ETL project is to extract data related to our project 1 “The 
 5. This function was used to scrape the table data from each of the feature table web pages and used pandas to read the tables. See the transformation steps taken in the below section.<br>
 
 ## Transform
-<img src="/Images/etl_project.PNG" width="540"> 
+<img src="/03 ImagesImages/Screenshot (156).png" width="720"> 
 - StatCan Life Satisfaction (API) transformation steps included: 
   - Select only columns of interest 
   - Drop na values 
