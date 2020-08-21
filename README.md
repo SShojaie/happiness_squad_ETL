@@ -1,5 +1,5 @@
 # Happiness Squad does ETL
-#### A UoT Data Analytic Bootcamp ETL project
+#### An UoT Data Analytic Bootcamp ETL project
 <img src="/03 Images/ciwbanner1000x400.png" width="1080">
 
 ## Team members: 
@@ -9,7 +9,7 @@
 - Vivi Santosa 
 
 ## Project description / online:
-The goal of this ETL project is to extract data related to our project 1 “The Pursuit of Happiness” from various disparate sources. Unlike the global scope of our first project, the focus of this ETL exercise will be on Canadian data. Once acquired, source information will undergo transformation to obtain data that is clean, disambiguous, and ready-to-consume. Transformed datasets will be loaded into afinal production database. 
+The goal of this ETL (Extract - Transform - Load) project is to extract information, transform, and then load them. We use data related to our project 1 “The Pursuit of Happiness” from various disparate sources. Unlike the global scope of our first project, the focus of this ETL exercise will be on Canadian data. Once acquired, source information will undergo transformation to obtain data that is clean, disambiguous, and ready-to-consume. Transformed datasets will be loaded into a final production database to be used for analysis or display. 
 <br>
 ## Data sources:
 - API: StatCan Life Satisfaction <br>
@@ -21,8 +21,8 @@ The goal of this ETL project is to extract data related to our project 1 “The 
 - Web scraping: UWaterloo Canadian Index of Wellbeing<br>
   https://uwaterloo.ca/canadian-index-wellbeing/reports/2016-canadian-index-wellbeing-national-report/trends-and-statistical-highlights<br>
   
-<img src="/03 Images/etl_project.PNG" width="540"> <br>
-## Extract: <br>
+<img align="center" src="/03 Images/etl_project.PNG" width="540"> <br>
+## EXTRACT: <br>
 ### StatCan Life Satisfaction – API
 1. The first step is to look for the desired data on the StatCan site. We pasted the URL  'https://www150.statcan.gc.ca/t1/wds/rest/getAllCubesListLite' to chrome and did a search function.<br>
 2. The desired table was identified as "Average satisfaction with life and with selected domains of life by age group and sex". The Product ID forthis table was used to request the information from the StatCan API. <br>
@@ -41,7 +41,7 @@ The goal of this ETL project is to extract data related to our project 1 “The 
 4. Data from eight additional “feature tables” were also scraped. Feature tables were stored in a similar format on the UWaterloo webpage, therefore to streamline scrape (and some of the data transformation steps), a function was created called “table_maker_function”. <br>
 5. This function was used to scrape the table data from each of the feature table web pages and used pandas to read the tables. See the transformation steps taken in the below section.<br>
 
-## Transform <br>
+## TRANSFORM <br>
 
 ### StatCan Life Satisfaction (API) transformation steps included: <br>
   - Select only columns of interest <br>
@@ -59,9 +59,16 @@ The goal of this ETL project is to extract data related to our project 1 “The 
   - Unwanted fields were dropped <br>
   - Column names were updated. Especially in the eight feature tables, very long column names were updated to short and intuitive column names to match table schemata in database<br>
 
-## Result <br>
+## LOAD <br>
 After the extract and transformation phase, we load the data to PostgreSQL.
-The image below shows the expected result.
+The image below shows the expected result. 
 
 <img src="/03 Images/Screenshot (156).png" width="720"> <br>
+
+We also create a small flask file to take the file from PostgresSQL and load it to an HTML file. Below is the screenshoot of the HTML display.
+
+<img src="/03 Images/Screenshot (158).png" width="720"> <br>
+
+
+
 
